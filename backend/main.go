@@ -57,7 +57,9 @@ func openDB(path string) (*sql.DB, error) {
  UPDATE products SET name='Fatia Ninho',description='Fatia de bolo com creme de leite Ninho e morangos.',price=1500,image='ninho' WHERE id=2 AND NOT EXISTS(SELECT 1 FROM migrations WHERE id='real-catalog-v1');
  UPDATE products SET name='Bombom gourmet',description='Caixa de bombons gourmet para presentear ou saborear.',price=3500,image='bombom' WHERE id=3 AND NOT EXISTS(SELECT 1 FROM migrations WHERE id='real-catalog-v1');
  UPDATE products SET name='Morango cravejado',description='Morango cravejado com cobertura cremosa.',price=1500,image='morango' WHERE id=4 AND NOT EXISTS(SELECT 1 FROM migrations WHERE id='real-catalog-v1');
- INSERT OR IGNORE INTO migrations VALUES('real-catalog-v1');`)
+ INSERT OR IGNORE INTO migrations VALUES('real-catalog-v1');
+ UPDATE products SET name='Fatia Matilda',description='Fatia de bolo de chocolate com camadas de recheio de chocolate.',price=1500,image='matilda' WHERE id=3 AND NOT EXISTS(SELECT 1 FROM migrations WHERE id='matilda-v1');
+ INSERT OR IGNORE INTO migrations VALUES('matilda-v1');`)
 	if e != nil {
 		db.Close()
 		return nil, e

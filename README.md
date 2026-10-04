@@ -1,6 +1,6 @@
 # Chef Othon — cardápio digital
 
-Next.js + React + TypeScript no frontend. API Go com SQLite (`modernc.org/sqlite`, sem CGO). Catálogo, sacola persistida no navegador, checkout de pronta entrega e solicitações de orçamento para bolos. Fotos ilustrativas geradas com a ferramenta integrada imagegen, em `frontend/public/images/pastries.png`. Prompt: composição fotográfica 3×2 com fatia de chocolate, cookie, brigadeiros, bolo no pote e dois bolos com frutas, luz natural, sem textos ou interface. Catálogo atual com fotos fornecidas pelo chef: Fatia sabor Kinder e Fatia Ninho a R$ 15,00, Bombom gourmet a R$ 35,00 e Morango cravejado a R$ 15,00.
+Next.js + React + TypeScript no frontend. API Go com SQLite (`modernc.org/sqlite`, sem CGO). Catálogo, sacola persistida no navegador, checkout de pronta entrega e solicitações de orçamento para bolos. Fotos ilustrativas geradas com a ferramenta integrada imagegen, em `frontend/public/images/pastries.png`. Prompt: composição fotográfica 3×2 com fatia de chocolate, cookie, brigadeiros, bolo no pote e dois bolos com frutas, luz natural, sem textos ou interface. Catálogo atual com fotos fornecidas pelo chef: Fatia sabor Kinder e Fatia Ninho a R$ 15,00, Fatia Matilda a R$ 15,00 e Morango cravejado a R$ 15,00.
 
 ## Executar localmente
 
@@ -44,4 +44,5 @@ O backend valida entradas, calcula valores a partir do catálogo e grava pedido 
 
 ## Antes da operação real
 Confirmar catálogo, imagens, preços, alergênicos, horários, endereço, taxa e área de entrega, prazos e regras de encomenda. Esta versão registra pedidos no SQLite e abre o WhatsApp com o texto do pedido. O cliente conclui o envio no WhatsApp. Não cobra pagamentos e não tem painel administrativo. Administração autenticada, disponibilidade/estoque, prevenção de duplicidade, proteção contra abuso, backups, privacidade e publicação são etapas seguintes registradas no roadmap.
+
 
