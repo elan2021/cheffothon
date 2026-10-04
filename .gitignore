@@ -1,0 +1,11 @@
+node_modules/
+.next/
+*.db
+*.db-shm
+*.db-wal
+*.exe
+.env*
+!.env.example
+test-results/
+playwright-report/
+*.tsbuildinfo

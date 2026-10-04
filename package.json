@@ -1,0 +1,1 @@
+{"name":"chef-othon","private":true,"scripts":{"dev":"npm --prefix frontend run dev","build":"npm --prefix frontend run build","backend":"go -C backend run .","test:backend":"go -C backend test ./..."}}
